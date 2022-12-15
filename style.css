@@ -99,6 +99,9 @@ form, input, textarea, select, button, label {
   width: 40%;
 
 }
+.close-menu {
+  display: none;
+}
 .header ul {
   display: flex;
   flex-flow: row nowrap;
@@ -110,27 +113,64 @@ form, input, textarea, select, button, label {
   margin: 0 .5em;
 }
 
+
 @media screen and (max-width: 480px) {
   
   .header .burger-button {
     display: block;
     border: 0;
+    cursor: pointer;
   }
 
   .header .nav {
-    width: 100%;
-    display: none;
+    /*     display: none; */
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .5s ease;
   }
 
-/*   .header .nav.active {
-    display: block;
+  .header .nav.active {
+/*     display: block; */
+    width: 100%;
   }
- */
+
+  .header .nav-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    right: 0;
+    background-color: var(--offWhite);
+  }
+
+  .header .close-menu {
+    display: block;
+    position: absolute;
+    width: 2.5em;
+    margin: 2.5em;
+    right: 0 ;
+    border: 0;
+    cursor: pointer;
+  }
+
   .header ul {
     flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15em;
+  
   }
 
   .header li {
-    margin: .5em 0;
+    margin: .5em 2.5em;
+    font-size: 1.8rem;
+    font-weight: 400;
   }
 }
