@@ -69,6 +69,7 @@ form, input, textarea, select, button, label {
   display: block;
 }
 
+
 .header {
   width: 100%;
   min-height: auto;
@@ -79,7 +80,6 @@ form, input, textarea, select, button, label {
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   width: auto;
 
@@ -89,15 +89,12 @@ form, input, textarea, select, button, label {
   min-height: auto;
 
 }
-
 .burger-button {
   display: none;
 
 }
-
 .header .nav{
   width: 40%;
-
 }
 .close-menu {
   display: none;
@@ -108,11 +105,82 @@ form, input, textarea, select, button, label {
   justify-content: flex-end;
   align-items: center;
 }
-
 .header li {
-  margin: 0 .5em;
+  margin: 0 1em;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.header li:hover {
+  color: var(--softOrange);
 }
 
+.hero-container {
+  width: 100%;
+  background-color: aqua;
+
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0 10em;
+
+}
+
+.hero-container .hero {
+  background-color: brown;
+
+  margin-right: 1.5em;
+} 
+
+.hero .hero-img {
+  background-color: bisque;
+  width: 100%;
+  min-height: 20em;
+}
+
+.hero .hero-text {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: aliceblue;
+}
+.hero h2 {
+  width: 100%;
+  padding-top: .3em;
+  padding-right: .5em;
+  font-size: 3rem;
+  font-weight: 800;
+  background-color: red;
+}
+
+.hero p {
+/*   width: 200%; */
+  padding: 1.3em;
+  font-size: 1.4rem;
+  background-color: coral;
+}
+
+.hero .hero-button {
+  background-color: yellowgreen;
+}
+
+.hero-container .news-container {
+ background-color: blueviolet;
+}
+
+.news-container h2{
+
+}
+
+.news-container .news-card {
+
+}
+
+.news-card h3 {
+  
+}
+
+.news-card p {
+
+}
 
 @media screen and (max-width: 480px) {
   
