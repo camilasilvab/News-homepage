@@ -130,6 +130,7 @@ form, input, textarea, select, button, label {
 .hero .hero-img {
   width: 100%;
   min-height: 20em;
+  background-image: url(./assets/images/image-web-3-desktop.jpg);
 }
 
 .hero .hero-text {
@@ -205,7 +206,16 @@ form, input, textarea, select, button, label {
   color: var(--grayishBlue);
 }
 
+
+
+
+
 @media screen and (max-width: 480px) {
+
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   
   .header .burger-button {
     display: block;
@@ -264,4 +274,47 @@ form, input, textarea, select, button, label {
     font-size: 1.8rem;
     font-weight: 400;
   }
+
+  .hero-container {
+    width: 100vw;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .hero-container .hero {
+    margin-right: 0;
+  }
+  .hero .hero-img {
+    width: 100vw;
+    background-image: url(./assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+  }
+  .hero .hero-text {
+    flex-direction: column;
+  } 
+
+  .hero .hero-text--info {
+    padding-left: 0;
+  }
+
+  .hero-container .news-container {
+    width: 100%;
+    min-height: 400px ;
+    margin-top: 4rem;
+  }
+
+  .news-container .news-card {
+    margin-bottom: 3rem;
+  }
+
+  .news-card:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  .news-card p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
 }

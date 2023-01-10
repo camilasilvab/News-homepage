@@ -7,5 +7,5 @@ button.addEventListener('click',()=>{
 })
 
 close.addEventListener('click',()=>{
-    nav.classList.toggle('active')
+    nav.classList.toggle('inactive')
 })
