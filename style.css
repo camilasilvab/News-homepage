@@ -73,7 +73,8 @@ form, input, textarea, select, button, label {
 .header {
   width: 100%;
   min-height: auto;
-  padding: 2.5em;
+  padding: 2.5em 10rem;
+
 
   display: flex;
   flex-flow: row wrap;
@@ -107,7 +108,7 @@ form, input, textarea, select, button, label {
 }
 .header li {
   margin: 0 1em;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 .header li:hover {
@@ -116,22 +117,17 @@ form, input, textarea, select, button, label {
 
 .hero-container {
   width: 100%;
-  background-color: aqua;
-
   display: flex;
   flex-flow: row nowrap;
-  padding: 0 10em;
+  padding: 0 10rem;
 
 }
 
 .hero-container .hero {
-  background-color: brown;
-
   margin-right: 1.5em;
 } 
 
 .hero .hero-img {
-  background-color: bisque;
   width: 100%;
   min-height: 20em;
 }
@@ -140,46 +136,73 @@ form, input, textarea, select, button, label {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  background-color: aliceblue;
 }
 .hero h2 {
   width: 100%;
   padding-top: .3em;
-  padding-right: .5em;
-  font-size: 3rem;
+  padding-right: 1em;
+  font-size: 3.8rem;
   font-weight: 800;
-  background-color: red;
+}
+
+.hero .hero-text--info {
+  padding: 1.3rem 2.6rem 0 2.3rem;
 }
 
 .hero p {
-/*   width: 200%; */
-  padding: 1.3em;
+  padding-bottom: 2rem;
   font-size: 1.4rem;
-  background-color: coral;
+  line-height: 2.8rem;
+  font-weight: 300;
 }
 
 .hero .hero-button {
-  background-color: yellowgreen;
+  background-color: var(--softRed);
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  color: var(--offWhite);
+  cursor: pointer;
 }
 
 .hero-container .news-container {
- background-color: blueviolet;
+  width: 60%;
+  padding: 3rem;
+  background-color: var(--veryDarkBlue);
+
 }
 
 .news-container h2{
-
+  margin-bottom: 2.2rem; ;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--softOrange);
 }
 
 .news-container .news-card {
-
+  height: calc(80% / 3);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--grayishBlue);
+}
+.news-card:nth-child(4) {
+  border: none;
 }
 
 .news-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--offWhite);
   
 }
 
 .news-card p {
-
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: var(--grayishBlue);
 }
 
 @media screen and (max-width: 480px) {
