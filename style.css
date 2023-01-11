@@ -115,6 +115,7 @@ form, input, textarea, select, button, label {
   color: var(--softOrange);
 }
 
+
 .hero-container {
   width: 100%;
   display: flex;
@@ -129,8 +130,11 @@ form, input, textarea, select, button, label {
 
 .hero .hero-img {
   width: 100%;
-  min-height: 20em;
+  min-height: 30em;
   background-image: url(./assets/images/image-web-3-desktop.jpg);
+  background-size: cover;
+  object-fit: cover;
+  
 }
 
 .hero .hero-text {
@@ -168,6 +172,10 @@ form, input, textarea, select, button, label {
   cursor: pointer;
 }
 
+.hero .hero-button:hover {
+  background-color: var(--veryDarkBlue);
+}
+
 .hero-container .news-container {
   width: 60%;
   padding: 3rem;
@@ -184,19 +192,24 @@ form, input, textarea, select, button, label {
 
 .news-container .news-card {
   height: calc(80% / 3);
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: .2rem;
   border-bottom: 1px solid var(--grayishBlue);
+  
 }
 .news-card:nth-child(4) {
   border: none;
 }
 
-.news-card h3 {
+.news-card h3 { 
   margin-bottom: 1rem;
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--offWhite);
-  
+  cursor: pointer;
+}
+.news-card h3:hover {
+  color: var(--softOrange);
 }
 
 .news-card p {
@@ -206,7 +219,70 @@ form, input, textarea, select, button, label {
   color: var(--grayishBlue);
 }
 
+.topNews-container {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  padding: 0 10rem;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  
+}
 
+.topNews-container .topNews-card {
+  display: flex;
+  width: 320px;
+  max-height: 120px;
+}
+.topNews-container .topNews-card:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.topNews-img { 
+  width: 30%;
+  height: 120px;
+}
+
+.topNews-img img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+
+.top-News-texts {
+  width: 70%;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+
+}
+
+.top-News-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: .4rem;
+  color: var(--grayishBlue);
+}
+
+.top-News-texts h4 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: .4rem ;
+  color: var(--veryDarkBlue);
+
+  cursor: pointer;
+}
+
+.top-News-texts h4:hover {
+  color: var(--softRed);
+}
+
+.top-News-p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: var(--darkGrayishBlue);
+}
 
 
 
@@ -317,4 +393,22 @@ form, input, textarea, select, button, label {
     margin-bottom: 2rem;
   }
 
+  .topNews-container {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 0 2rem;
+    margin-bottom: 5rem;
+  }
+  .topNews-card {
+    margin-top: 4rem;
+  }
+
+  .top-News-texts h4{
+    font-size: 1.6rem;
+  }
+  .top-News-p {
+    font-size: 1.4rem;
+  }
+  
 }
