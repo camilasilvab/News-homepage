@@ -1,12 +1,17 @@
 # Frontend Mentor - News homepage solution
 
-
 ## The challenge
 
-Users should be able to:
+1. design content layout on the homepage focusing on components
+- navigation 
+- headlines and sub articles
+- trending topics
+- footer
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+2. follow a mobile first responsive approach
+3. work on the aesthetic
+4. correct errors 
+5. separate layout styles from normal stylesheets
 
 ### Built with
 
@@ -15,3 +20,4 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Responsive design
+
