@@ -1,15 +1,5 @@
-:root {
-  --softOrange: hsl(35, 77%, 62%);
-  --softRed: hsl(5, 85%, 63%);
-  --offWhite: hsl(36, 100%, 99%);
-  --grayishBlue: hsl(233, 8%, 79%);
-  --darkGrayishBlue: hsl(236, 13%, 42%);
-  --veryDarkBlue: hsl(240, 100%, 5%);
 
-  --tipo-principal: 'Inter', sans-serif;
-
-}
-
+/* - resets - */
 * {
   margin: 0;
   padding: 0;
@@ -23,70 +13,54 @@ html {
   scroll-behavior: smooth;
 }
 
-img, picture, video, iframe, figure {
-  max-width: 100%;
-  width: 100%;
-  display: block;
-}
+
 
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: var(--tipo-principal);
+  font-family: var(--site-font-type);
   color: var(--veryDarkBlue);
 }
 
-a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
+
+
+
+
+/* - layout-container-area - */
+.layout-container-area {
+  display: flex;
+  flex-direction: row;
 }
 
-p a {
-  display: inline;
+/* - header-area. - */
+.header-area {
+  /*
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  */
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgb(116, 116, 116);
+  background: var(--offWhite);
 }
 
-li {
-  list-style-type: none;
-}
-
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
-  font-size: 1em;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color: inherit;
-}
-
-form, input, textarea, select, button, label {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-  background-color: transparent;
-  color: inherit;
+/* - main-area - */
+.main-area {
   display: block;
 }
-
 
 .header {
-  width: 100%;
-  min-height: auto;
-  padding: 2.5em 10rem;
-
-
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
+  padding: .5rem;
 }
+
 .logo {
   width: auto;
 
 }
-.logo img {
+.logo-img {
   width: 5em;
   min-height: auto;
 
@@ -117,181 +91,16 @@ form, input, textarea, select, button, label {
 }
 
 
-.hero-container {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  padding: 0 10rem;
-
-}
-
-.hero-container .hero {
-  margin-right: 1.5em;
-} 
-
-.hero .hero-img {
-  width: 100%;
-  min-height: 30em;
-  background-image: url(./assets/images/image-web-3-desktop.jpg);
-  background-size: cover;
-  object-fit: cover;
-  
-}
-
-.hero .hero-text {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-}
-.hero h2 {
-  width: 100%;
-  padding-top: .3em;
-  padding-right: 1em;
-  font-size: 3.8rem;
-  font-weight: 800;
-}
-
-.hero .hero-text--info {
-  padding: 1.3rem 2.6rem 0 2.3rem;
-}
-
-.hero p {
-  padding-bottom: 2rem;
-  font-size: 1.4rem;
-  line-height: 2.8rem;
-  font-weight: 300;
-}
-
-.hero .hero-button {
-  background-color: var(--softRed);
-  width: 15rem;
-  height: 4rem;
-  border: none;
-  font-weight: 700;
-  letter-spacing: 0.5rem;
-  color: var(--offWhite);
-  cursor: pointer;
-}
-
-.hero .hero-button:hover {
-  background-color: var(--veryDarkBlue);
-}
-
-.hero-container .news-container {
-  width: 60%;
-  padding: 3rem;
-  background-color: var(--veryDarkBlue);
-
-}
-
-.news-container h2{
-  margin-bottom: 2.2rem; ;
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--softOrange);
-}
-
-.news-container .news-card {
-  height: calc(80% / 3);
-  margin-top: 3rem;
-  margin-bottom: .2rem;
-  border-bottom: 1px solid var(--grayishBlue);
-  
-}
-.news-card:nth-child(4) {
-  border: none;
-}
-
-.news-card h3 { 
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--offWhite);
-  cursor: pointer;
-}
-.news-card h3:hover {
-  color: var(--softOrange);
-}
-
-.news-card p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  color: var(--grayishBlue);
-}
-
-.topNews-container {
-  display: flex;
-  height: 150px;
-  justify-content: space-between;
-  padding: 0 10rem;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  
-}
-
-.topNews-container .topNews-card {
-  display: flex;
-  width: 320px;
-  max-height: 120px;
-}
-.topNews-container .topNews-card:nth-last-child(1) {
-  margin-right: 0;
-}
-
-.topNews-img { 
-  width: 30%;
-  height: 120px;
-}
-
-.topNews-img img {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  object-fit: cover;
-}
-
-.top-News-texts {
-  width: 70%;
-  padding-top: 1rem;
-  padding-left: 2rem;
-  font-size: 1rem;
-
-}
-
-.top-News-number {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: .4rem;
-  color: var(--grayishBlue);
-}
-
-.top-News-texts h4 {
-  font-size: 1.4rem;
-  font-weight: 800;
-  margin-bottom: .4rem ;
-  color: var(--veryDarkBlue);
-
-  cursor: pointer;
-}
-
-.top-News-texts h4:hover {
-  color: var(--softRed);
-}
-
-.top-News-p {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  color: var(--darkGrayishBlue);
-}
 
 
 
 @media screen and (max-width: 480px) {
 
   .header {
+    /* 
     padding-left: 2rem;
     padding-right: 2rem;
+    */
   }
   
   .header .burger-button {
