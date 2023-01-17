@@ -84,6 +84,7 @@ form, input, textarea, select, button, label {
 /* header-area */
 .header-area {
     display: block;
+    min-height: 100vh;
     border-right: .1rem solid var(--primary-bd-color-hard);
 }
 
