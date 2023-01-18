@@ -1,6 +1,6 @@
 # news blog frontend
 a simple frontend for a blog news site
-/
+
 ## The challenge
 - write modular, readable css without using a css preprocessor the focus being ease of maintainance/ease to deploy 
 
@@ -10,12 +10,16 @@ a simple frontend for a blog news site
 
 # TODO
 - design to be mobile-first repsonsive
-- focus on singular components and their interaction
+- focus on singular components
 - switch between different layouts 
 - switch between differnet themes
 
 ### Built with
 - vanilla javascript
 - vanilla css
- - flexbox
+
+## PROBLEMS
+i've changed alot from previous repo that this should be it's own standalone instead of a for
+
+also not quite sure how readable this is?
 
