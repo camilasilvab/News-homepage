@@ -1,0 +1,24 @@
+/* font varaibles */
+:root {
+    --primary-font-type: 'Courier New', Courier, monospace;
+    --primary-font-size: 16px;
+    --primary-line-height: 1.5; 
+}
+
+/* width/height variables */
+:root {
+    --border-width: .125rem;
+    --border-width: .25rem;
+    --border-width: .5rem;
+}
+
+:root {
+    --primary-text-color: rgb(30, 30, 30);
+    --primary-border-color-soft: rgb(150, 150, 150);
+    --primary-border-color-mid: gray; 
+    --primary-border-color-hard: rgb(30, 30, 30);
+
+    --bg-color-soft: rgb(255, 220, 210);
+    --bg-color-mid: rgb(255, 150, 100);
+    --bg-color-hard: rgb(255, 40, 40);
+}

@@ -1,0 +1,12 @@
+/* the base requite css */
+
+html {
+    font-family: var(--primary-font-type);
+    font-size: var(--primary-font-size);
+}
+
+body {
+    font-family: var(--primary-font-type);
+    font-size: var(--primary-font-size);
+    line-height: var(--primary-line-height);
+}

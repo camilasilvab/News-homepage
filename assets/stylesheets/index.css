@@ -1,0 +1,16 @@
+/* these are 9 requests - hehe! */
+@import url("./utilities/variables.css");
+@import url("./utilities/resets.css");
+
+@import url("./base.css");
+
+@import url("./layout/header.css");
+@import url("./layout/main.css");
+@import url("./layout/aside.css");
+@import url("./layout/footer.css");
+
+@import url("./components/story_card.css");
+@import url("./components/nav_link_item.css");
+
+
+
