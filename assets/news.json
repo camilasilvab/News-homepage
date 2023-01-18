@@ -4,19 +4,79 @@
         "teaser": "a shallow dive into all the techniques we use t form you opinions and beleifs",
         "category": "finance",
         "authors": [
-            "Alexander Volta",
-            "Nikola tesla"
+            "author1",
+            "author2"
         ],
         "postedOn": "18-23-23"
     },
     "st02": {
-        "header": "all the ways the news lie to you",
+        "header": "pls click the link, that's how we make money",
         "teaser": "a shallow dive into all the techniques we use t form you opinions and beleifs",
         "category": "finance",
         "authors": [
-            "Alexander Volta",
-            "Nikola tesla"
+            "author1",
+            "author2"
         ],
         "postedOn": "18-23-23"
-    }
+    },
+    "st03": {
+        "header": "bad person caught being bad in 4K",
+        "teaser": "repeat offender caught in the wrong again, here's how you can hate them more and cancel mobs you can join",
+        "category": "finance",
+        "authors": [
+            "author1",
+            "author2"
+        ],
+        "postedOn": "18-23-23"
+    },
+    "st04": {
+        "header": "the AI revolution and why you should care less",
+        "teaser": "after shock divorce with crypto, tech bros rebound with AI, say unlike previous relationship, this will last longer and way more healthier",
+        "category": "artificial intelligence",
+        "authors": [
+            "author1",
+            "author2"
+        ],
+        "postedOn": "18-23-23"
+    },
+    "st05": {
+        "header": "why you shouldn't kill your dog for tiktok likes",
+        "teaser": "new tiktok trend has users facing a cruel ethical test of what matter more; their dog's life or millions of views",
+        "category": "finance",
+        "authors": [
+            "author1",
+            "author2"
+        ],
+        "postedOn": "18-23-23"
+    },
+    "st06": {
+        "header": "local atheist angered at unanswered manifesting",
+        "teaser": "after unsuccseful attempts at manifesting says he'll try out horoscopes, yoga and meditating",
+        "category": "finance",
+        "authors": [
+            "author1",
+            "author2"
+        ],
+        "postedOn": "18-23-23"
+    },
+    "st07": {
+        "header": "ten books that will look good on your shelf",
+        "teaser": "don't judge a book only by its cover, judge it's side profile as well",
+        "category": "literature",
+        "authors": [
+            "author1",
+            "author2"
+        ],
+        "postedOn": "18-23-23"
+    },
+    "st08": {
+        "header": "owners of the means of production accuse the governments of making capitalism too hard",
+        "teaser": "governments accused of not working for it's true legitimate owners",
+        "category": "literature",
+        "authors": [
+            "author1",
+            "author2"
+        ],
+        "postedOn": "18-23-23"
+    },
 }
