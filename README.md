@@ -1,23 +1,21 @@
-# Frontend Mentor - News homepage solution
-
+# news blog frontend
+a simple frontend for a blog news site
+/
 ## The challenge
+- write modular, readable css without using a css preprocessor the focus being ease of maintainance/ease to deploy 
 
-1. design content layout on the homepage focusing on components
-- navigation 
-- headlines and sub articles
-- trending topics
-- footer
+- vanilla javascript only because frameworks suck (except svelte, ilu svelte!)
 
-2. follow a mobile first responsive approach
-3. work on the aesthetic
-4. correct errors 
-5. separate layout styles from normal stylesheets
+- follow reccomended best principles and guidelines
+
+# TODO
+- design to be mobile-first repsonsive
+- focus on singular components and their interaction
+- switch between different layouts 
+- switch between differnet themes
 
 ### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Responsive design
+- vanilla javascript
+- vanilla css
+ - flexbox
 
