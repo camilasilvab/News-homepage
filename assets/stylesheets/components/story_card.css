@@ -13,6 +13,7 @@
 /* - content-area */
 .story-card__content-area {
     display: block;
+    padding: .25rem;
     border: .125rem solid var(--primary-border-color-soft);
 }
 
@@ -72,7 +73,6 @@
 /* - action-area */
 .story-card__action-area {
     display: flex;
-    border-top: .25rem solid var(--primary-border-color-soft) ;
 }
 
 .action-area__btn {
